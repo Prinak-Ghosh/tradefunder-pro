@@ -15,7 +15,7 @@ const AiPresenceSection = () => {
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.6 }}
           >
-            Understand Your AI Presence Fully
+            Understand Your Trading Performance Fully
           </motion.h2>
           <motion.p 
             className="text-[#717179] text-xl font-medium leading-[26px] mb-12 max-w-[500px] mx-auto"
@@ -24,7 +24,7 @@ const AiPresenceSection = () => {
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            The tools designed to give you complete oversight of your brand's performance and perception
+            The tools designed to give you complete oversight of your trading performance and community perception
           </motion.p>
           <div className="flex gap-4 justify-center">
             <Button variant="default" className="bg-white text-[#0D0D0D] hover:bg-gray-100 px-6 py-2 rounded-lg">
@@ -36,14 +36,21 @@ const AiPresenceSection = () => {
           </div>
         </div>
 
-        {/* First Content Section - Sentiment Analysis */}
+        {/* First Content Section - Performance Analytics */}
         <div className="border-t border-l border-r border-[#252525] mb-8">
           <div className="flex flex-col lg:flex-row items-center gap-8">
             {/* Left Image */}
             <div className="w-full lg:w-1/2 relative">
-              <img alt="Sentiment Analysis Dashboard" className="w-full h-[403px] object-cover " src="/lovable-uploads/d7f17d89-beef-45d8-9a70-5875feaa7be2.jpg" />
-              <div className="absolute inset-0 flex items-center justify-center">
-                <img alt="Sentiment Breakdown" className="max-w-[80%] max-h-[80%] object-contain" src="/lovable-uploads/cefc339e-1b57-499b-be6b-fc6405d707a3.png" />
+              <img 
+                alt="Trading Performance Dashboard" 
+                className="w-full h-[403px] object-cover rounded-lg" 
+                src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
+              />
+              <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center rounded-lg">
+                <div className="text-center">
+                  <h4 className="text-white text-2xl font-bold mb-2">Performance Analytics</h4>
+                  <p className="text-gray-300">Real-time trading metrics</p>
+                </div>
               </div>
             </div>
 
@@ -57,7 +64,7 @@ const AiPresenceSection = () => {
                   viewport={{ once: true, margin: "-100px" }}
                   transition={{ duration: 0.6 }}
                 >
-                  Brand Perception Analytics
+                  Trading Performance Analytics
                 </motion.h3>
                 <motion.p 
                   className="text-[#717179] text-lg font-medium leading-[23.4px]"
@@ -66,7 +73,7 @@ const AiPresenceSection = () => {
                   viewport={{ once: true, margin: "-100px" }}
                   transition={{ duration: 0.6, delay: 0.2 }}
                 >
-                  Get deep insights into how AI systems perceive and represent your brand across different contexts and queries.
+                  Get deep insights into your trading performance and how the community perceives your strategies across different market conditions.
                 </motion.p>
               </div>
 
@@ -74,22 +81,22 @@ const AiPresenceSection = () => {
               <div className="space-y-4">
                 <div className="flex items-center gap-4">
                   <Zap size={20} className="text-[#EB894C] flex-shrink-0" />
-                  <span className="text-white text-base font-medium">Sentiment scoring</span>
+                  <span className="text-white text-base font-medium">Performance scoring</span>
                 </div>
                 <div className="flex items-center gap-4">
                   <Zap size={20} className="text-[#EB894C] flex-shrink-0" />
-                  <span className="text-white text-base font-medium">Context analysis</span>
+                  <span className="text-white text-base font-medium">Strategy analysis</span>
                 </div>
                 <div className="flex items-center gap-4">
                   <Zap size={20} className="text-[#EB894C] flex-shrink-0" />
-                  <span className="text-white text-base font-medium">Trend monitoring</span>
+                  <span className="text-white text-base font-medium">Market trend monitoring</span>
                 </div>
               </div>
             </div>
           </div>
         </div>
 
-        {/* Second Content Section - Live AI Mentions */}
+        {/* Second Content Section - Live Trading Mentions */}
         <div className="border-t border-l border-r border-[#252525] mb-8">
           <div className="flex flex-col lg:flex-row items-center gap-8">
             {/* Left Content */}
@@ -102,7 +109,7 @@ const AiPresenceSection = () => {
                   viewport={{ once: true, margin: "-100px" }}
                   transition={{ duration: 0.6 }}
                 >
-                  Live AI Mentions
+                  Live Trading Mentions
                 </motion.h3>
                 <motion.p 
                   className="text-[#717179] text-lg font-medium leading-[23.4px]"
@@ -111,7 +118,7 @@ const AiPresenceSection = () => {
                   viewport={{ once: true, margin: "-100px" }}
                   transition={{ duration: 0.6, delay: 0.2 }}
                 >
-                  Monitor your brand mentions across AI platforms in real-time and receive instant alerts when your brand is discussed in AI-generated content.
+                  Monitor your trading mentions across social platforms in real-time and receive instant alerts when your strategies are discussed in the community.
                 </motion.p>
               </div>
 
@@ -119,11 +126,11 @@ const AiPresenceSection = () => {
               <div className="space-y-4">
                 <div className="flex items-center gap-4">
                   <Globe size={20} className="text-[#797BEC] flex-shrink-0" />
-                  <span className="text-white text-base font-medium">Real-time brand monitoring</span>
+                  <span className="text-white text-base font-medium">Real-time mention monitoring</span>
                 </div>
                 <div className="flex items-center gap-4">
                   <Bell size={20} className="text-[#797BEC] flex-shrink-0" />
-                  <span className="text-white text-base font-medium">Instant mention alerts</span>
+                  <span className="text-white text-base font-medium">Instant strategy alerts</span>
                 </div>
                 <div className="flex items-center gap-4">
                   <TrendingUp size={20} className="text-[#797BEC] flex-shrink-0" />
@@ -134,22 +141,36 @@ const AiPresenceSection = () => {
 
             {/* Right Image */}
             <div className="w-full lg:w-1/2 relative">
-              <img alt="AI Dashboard Analytics" className="w-full h-[403px] object-cover " src="/lovable-uploads/d7f17d89-beef-45d8-9a70-5875feaa7be2.jpg" />
-              <div className="absolute inset-0 flex items-center justify-center">
-                <img alt="AI Mentions Chart" className="max-w-[80%] max-h-[80%] object-contain" src="/lovable-uploads/8212efc3-9d25-4b5d-a856-32f10dc0abff.png" />
+              <img 
+                alt="Trading Analytics Dashboard" 
+                className="w-full h-[403px] object-cover rounded-lg" 
+                src="https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
+              />
+              <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center rounded-lg">
+                <div className="text-center">
+                  <h4 className="text-white text-2xl font-bold mb-2">Mention Tracking</h4>
+                  <p className="text-gray-300">Community sentiment analysis</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
 
-        {/* Third Content Section - Referral Analytics */}
+        {/* Third Content Section - Traffic Analytics */}
         <div className="border-t border-l border-r border-[#252525]">
           <div className="flex flex-col lg:flex-row items-center gap-8">
             {/* Left Image */}
             <div className="w-full lg:w-1/2 relative">
-              <img alt="Referral Analytics Dashboard" className="w-full h-[403px] object-cover " src="/lovable-uploads/d7f17d89-beef-45d8-9a70-5875feaa7be2.jpg" />
-              <div className="absolute inset-0 flex items-center justify-center">
-                <img alt="AI Traffic Analytics" className="max-w-[80%] max-h-[80%] object-contain" src="/lovable-uploads/7d7505ec-772e-4b00-b619-d37f22301b0c.png" />
+              <img 
+                alt="Traffic Analytics Dashboard" 
+                className="w-full h-[403px] object-cover rounded-lg" 
+                src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
+              />
+              <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center rounded-lg">
+                <div className="text-center">
+                  <h4 className="text-white text-2xl font-bold mb-2">Traffic Intelligence</h4>
+                  <p className="text-gray-300">Follower-driven traffic analysis</p>
+                </div>
               </div>
             </div>
 
@@ -163,7 +184,7 @@ const AiPresenceSection = () => {
                   viewport={{ once: true, margin: "-100px" }}
                   transition={{ duration: 0.6 }}
                 >
-                  AI-Driven Traffic Intelligence
+                  Follower-Driven Traffic Intelligence
                 </motion.h3>
                 <motion.p 
                   className="text-[#717179] text-lg font-medium leading-[23.4px]"
@@ -172,7 +193,7 @@ const AiPresenceSection = () => {
                   viewport={{ once: true, margin: "-100px" }}
                   transition={{ duration: 0.6, delay: 0.2 }}
                 >
-                  Track and analyze traffic generated from AI recommendations, measuring the direct impact on your business metrics.
+                  Track and analyze traffic generated from your followers and community recommendations, measuring the direct impact on your creator revenue.
                 </motion.p>
               </div>
 
