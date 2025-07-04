@@ -1,16 +1,14 @@
 
-import { ArrowRight, Zap, Plus } from "lucide-react";
-import { Button } from "@/components/ui/button";
 import Navigation from "@/components/Navigation";
 import HeroSection from "@/components/HeroSection";
 import DashboardSection from "@/components/DashboardSection";
 import MetricsSection from "@/components/MetricsSection";
-import FeatureSection from "@/components/FeatureSection";
-import AiPresenceSection from "@/components/AiPresenceSection";
+import TradingFeatures from "@/components/TradingFeatures";
 import GetStartedSection from "@/components/GetStartedSection";
-import Footer from "@/components/Footer";
-import AlternatePricingSection from "@/components/AlternatePricingSection";
+import AiPresenceSection from "@/components/AiPresenceSection";
+import PricingSection from "@/components/PricingSection";
 import CtaSection from "@/components/CtaSection";
+import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
@@ -19,10 +17,10 @@ const Index = () => {
       <HeroSection />
       <DashboardSection />
       <MetricsSection />
-      <FeatureSection />
+      <TradingFeatures />
       <GetStartedSection />
       <AiPresenceSection />
-      <AlternatePricingSection />
+      <PricingSection />
       <CtaSection />
       <Footer />
     </div>

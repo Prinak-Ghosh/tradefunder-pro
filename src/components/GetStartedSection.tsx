@@ -1,49 +1,75 @@
 
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, DollarSign, Users, TrendingUp } from "lucide-react";
 import { motion } from "framer-motion";
-import ExpandableFeatureList from "./ExpandableFeatureList";
 
 const GetStartedSection = () => {
+  const steps = [
+    {
+      icon: Users,
+      title: "Create Your Profile",
+      description: "Set up your trader profile and connect your trading history"
+    },
+    {
+      icon: TrendingUp,
+      title: "Share Your Strategies",
+      description: "Post insights, analysis, and trading calls with flexible pricing"
+    },
+    {
+      icon: DollarSign,
+      title: "Earn Revenue",
+      description: "Monetize your expertise with subscriptions and individual content sales"
+    }
+  ];
+
   return (
-    <section className="w-full py-20 px-6">
+    <section className="w-full py-20 px-6 bg-[#0a0a0a]">
       <div className="max-w-screen-xl mx-auto">
-        <div className="relative">
-          {/* Background overlay with image */}
-          <div 
-            className="absolute inset-0 bg-[#0D0D0D] opacity-90 outline outline-1 outline-[#252525] outline-offset-[-1px]"
-            style={{
-              backgroundImage: 'url(/lovable-uploads/3cd91dff-7628-476d-9537-716fa6bda0fa.png)',
-              backgroundSize: 'cover',
-              backgroundPosition: 'center',
-              backgroundRepeat: 'no-repeat'
-            }}
-          />
-          
-          {/* Content */}
-          <div className="relative flex flex-col lg:flex-row items-center lg:items-start justify-center gap-6 lg:gap-12 p-6 lg:p-10 min-h-[600px] lg:min-h-[500px]">
-            {/* Right side - White card (now takes full width on mobile) */}
-            <div className="w-full max-w-md lg:w-[420px] lg:max-w-none bg-white rounded-xl p-6 py-[42px] lg:self-center flex-shrink-0 lg:ml-auto">
-              <motion.h2 
-                className="text-[#09090B] text-2xl lg:text-[27px] font-bold leading-tight lg:leading-[44px] mb-6 w-full"
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-100px" }}
-                transition={{ duration: 0.6 }}
-              >
-                Get started in 3 simple steps.
-              </motion.h2>
-              
-              <Button className="bg-white text-[#0D0D0D] text-sm font-medium border border-gray-200 hover:bg-gray-50 px-4 py-2 mb-8">
-                Start your growth
-                <ArrowRight className="ml-2 h-4 w-4" />
-              </Button>
-              
-              <div className="mt-6">
-                <ExpandableFeatureList />
+        <div className="text-center mb-16">
+          <motion.h2 
+            className="text-4xl font-bold text-white mb-6"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.6 }}
+          >
+            Start Earning in 3 Simple Steps
+          </motion.h2>
+          <motion.p 
+            className="text-xl text-[#a1a1aa] max-w-2xl mx-auto"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.6, delay: 0.1 }}
+          >
+            Join thousands of traders already monetizing their expertise on TradeFunder
+          </motion.p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+          {steps.map((step, index) => (
+            <motion.div
+              key={step.title}
+              className="text-center"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 0.6, delay: index * 0.1 }}
+            >
+              <div className="w-16 h-16 bg-[#4a9489] rounded-full flex items-center justify-center mx-auto mb-6">
+                <step.icon className="h-8 w-8 text-white" />
               </div>
-            </div>
-          </div>
+              <h3 className="text-xl font-semibold text-white mb-4">{step.title}</h3>
+              <p className="text-[#a1a1aa]">{step.description}</p>
+            </motion.div>
+          ))}
+        </div>
+
+        <div className="text-center">
+          <Button className="bg-[#4a9489] text-white hover:bg-[#3d7a6f] rounded-lg shadow-sm px-8 py-3 text-lg">
+            Start Your Creator Journey
+            <ArrowRight className="ml-2 h-5 w-5" />
+          </Button>
         </div>
       </div>
     </section>

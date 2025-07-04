@@ -1,6 +1,6 @@
 
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Zap } from "lucide-react";
+import { ArrowRight, TrendingUp } from "lucide-react";
 import { motion } from "framer-motion";
 
 const HeroSection = () => {
@@ -36,34 +36,61 @@ const HeroSection = () => {
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
         >
+          <motion.div 
+            className="inline-flex items-center px-4 py-2 bg-[#1a1a1a] border border-[#262626] rounded-full text-sm text-[#4a9489] mb-6"
+            variants={itemVariants}
+          >
+            <TrendingUp className="mr-2 h-4 w-4" />
+            OnlyFans for Traders
+          </motion.div>
+          
           <motion.h1 
             className="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight"
             variants={itemVariants}
           >
-            Better insights. Zero friction.{" "}
-            <span className="block">Integrated experience.</span>
+            Monetize Your Trading{" "}
+            <span className="block text-[#4a9489]">Expertise</span>
           </motion.h1>
           
           <motion.p 
             className="text-xl text-[#a1a1aa] mb-8 max-w-2xl mx-auto leading-relaxed"
             variants={itemVariants}
           >
-            Intelligent billing, streamlined project tracking, and unified business operations — everything in one platform.
+            Join the gamified social finance platform where top traders share exclusive insights, followers discover profitable strategies, and everyone wins together.
           </motion.p>
           
           <motion.div 
             className="flex flex-col sm:flex-row items-center justify-center gap-4"
             variants={itemVariants}
           >
-            <Button size="lg" variant="secondary" className="text-white px-6 py-3 rounded-lg shadow-sm bg-neutral-900 hover:bg-neutral-800">
-              Try for free
+            <Button size="lg" className="bg-[#4a9489] text-white hover:bg-[#3d7a6f] rounded-lg shadow-sm px-6 py-3">
+              Start Creating
               <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
             
-            <Button size="lg" className="bg-slate-50 text-slate-950 hover:bg-gray-100 rounded-lg shadow-sm border border-[#4a9489] px-6 py-3">
-              <Zap className="mr-2 h-4 w-4" />
-              Chat with sales
+            <Button size="lg" variant="secondary" className="text-white px-6 py-3 rounded-lg shadow-sm bg-neutral-900 hover:bg-neutral-800 border border-[#262626]">
+              Discover Strategies
             </Button>
+          </motion.div>
+          
+          <motion.div 
+            className="mt-12 text-center text-sm text-[#a1a1aa]"
+            variants={itemVariants}
+          >
+            <div className="flex items-center justify-center space-x-8">
+              <div>
+                <div className="text-2xl font-bold text-white">10K+</div>
+                <div>Active Traders</div>
+              </div>
+              <div>
+                <div className="text-2xl font-bold text-white">$2M+</div>
+                <div>Creator Earnings</div>
+              </div>
+              <div>
+                <div className="text-2xl font-bold text-white">95%</div>
+                <div>Success Rate</div>
+              </div>
+            </div>
           </motion.div>
         </motion.div>
       </div>
