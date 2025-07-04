@@ -4,6 +4,7 @@ import HeroSection from "@/components/HeroSection";
 import DashboardSection from "@/components/DashboardSection";
 import MetricsSection from "@/components/MetricsSection";
 import TradingFeatures from "@/components/TradingFeatures";
+import CreatorShowcase from "@/components/CreatorShowcase";
 import GetStartedSection from "@/components/GetStartedSection";
 import AiPresenceSection from "@/components/AiPresenceSection";
 import PricingSection from "@/components/PricingSection";
@@ -18,6 +19,7 @@ const Index = () => {
       <DashboardSection />
       <MetricsSection />
       <TradingFeatures />
+      <CreatorShowcase />
       <GetStartedSection />
       <AiPresenceSection />
       <PricingSection />

@@ -4,16 +4,16 @@ import { motion } from "framer-motion";
 const MetricsSection = () => {
   const metrics = [
     {
-      number: "160+",
-      description: "Our software is used by people in over 160 countries worldwide."
+      number: "10K+",
+      description: "Active traders sharing insights and strategies on our platform worldwide."
     }, 
     {
-      number: "$7000",
-      description: "Save $7000 in billable hours each year with our innovative solutions."
+      number: "$2M+",
+      description: "Total creator earnings generated through premium content and subscriptions."
     }, 
     {
-      number: "30M+",
-      description: "More than 30 million businesses have benefited from our services."
+      number: "95%",
+      description: "Success rate of traders who follow our top-performing creators consistently."
     }
   ];
 
