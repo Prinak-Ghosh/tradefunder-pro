@@ -1,7 +1,7 @@
-
 import { Button } from "@/components/ui/button";
 import { Check } from "lucide-react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const PricingSection = () => {
   const plans = [
@@ -14,7 +14,8 @@ const PricingSection = () => {
         "Basic platform access",
         "Follow up to 5 creators",
         "Limited content access",
-        "Community discussions"
+        "Community discussions",
+        "Basic trading insights"
       ],
       highlighted: false
     },
@@ -28,7 +29,8 @@ const PricingSection = () => {
         "Enhanced discovery features",
         "Priority customer support",
         "Advanced filtering tools",
-        "Mobile app access"
+        "Mobile app access",
+        "Real-time notifications"
       ],
       highlighted: true
     },
@@ -43,7 +45,8 @@ const PricingSection = () => {
         "Custom branding options",
         "Premium creator tools",
         "Revenue optimization insights",
-        "Direct creator support"
+        "Direct creator support",
+        "Priority content promotion"
       ],
       highlighted: false
     }
@@ -54,7 +57,7 @@ const PricingSection = () => {
       <div className="max-w-screen-xl mx-auto">
         <div className="text-center mb-16">
           <motion.h2 
-            className="text-4xl font-bold text-white mb-6"
+            className="text-4xl md:text-5xl font-bold text-white mb-6"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
@@ -63,13 +66,13 @@ const PricingSection = () => {
             Simple, Transparent Pricing
           </motion.h2>
           <motion.p 
-            className="text-xl text-[#a1a1aa] max-w-2xl mx-auto"
+            className="text-xl text-[#a1a1aa] max-w-3xl mx-auto"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.6, delay: 0.1 }}
           >
-            Choose the plan that fits your trading journey. Upgrade anytime.
+            Choose the plan that fits your trading journey. Start free and upgrade anytime as your needs grow.
           </motion.p>
         </div>
 
@@ -113,27 +116,35 @@ const PricingSection = () => {
                 ))}
               </ul>
 
-              <Button 
-                className={`w-full ${
-                  plan.highlighted 
-                    ? 'bg-[#4a9489] hover:bg-[#3d7a6f] text-white' 
-                    : 'bg-[#262626] hover:bg-[#333] text-white'
-                }`}
-              >
-                Get Started
-              </Button>
+              <Link to="/register">
+                <Button 
+                  className={`w-full ${
+                    plan.highlighted 
+                      ? 'bg-[#4a9489] hover:bg-[#3d7a6f] text-white' 
+                      : 'bg-[#262626] hover:bg-[#333] text-white'
+                  }`}
+                >
+                  Get Started
+                </Button>
+              </Link>
             </motion.div>
           ))}
         </div>
 
-        <div className="text-center mt-12">
+        <motion.div 
+          className="text-center mt-12"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.6, delay: 0.4 }}
+        >
           <p className="text-sm text-[#666] mb-4">
             Platform fees: 15% on content purchases • 5% on subscriptions
           </p>
           <p className="text-xs text-[#666]">
             All plans include secure payment processing and 24/7 platform monitoring
           </p>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

@@ -20,7 +20,7 @@ const AboutUs = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
             >
-              About Webfluin
+              About TradeFunder
             </motion.h1>
             <motion.p 
               className="text-[#717179] text-xl font-medium leading-[26px] mb-12 max-w-[600px] mx-auto"
@@ -28,7 +28,7 @@ const AboutUs = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              We're on a mission to help brands understand and optimize their presence in the AI-powered world of tomorrow.
+              We're revolutionizing how traders and funders connect, creating a transparent and efficient marketplace for trading ideas and capital.
             </motion.p>
           </div>
         </div>
@@ -55,7 +55,7 @@ const AboutUs = () => {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: 0.2 }}
               >
-                Founded in 2024, Webfluin emerged from a simple observation: as AI becomes increasingly integrated into how people discover and interact with brands, traditional analytics tools weren't designed to capture this new reality.
+                Founded in 2024, TradeFunder emerged from a simple observation: talented traders with great ideas often lack the capital to execute them, while investors with capital struggle to find reliable trading opportunities.
               </motion.p>
               <motion.p 
                 className="text-[#717179] text-lg font-medium leading-[23.4px]"
@@ -64,7 +64,7 @@ const AboutUs = () => {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: 0.4 }}
               >
-                We saw businesses struggling to understand how AI systems like ChatGPT, Claude, and others were representing their brands, and realized there was a critical gap in the market for AI-focused brand intelligence.
+                We created a platform that bridges this gap, connecting skilled traders with funders in a transparent, secure, and mutually beneficial ecosystem.
               </motion.p>
             </div>
             <div className="relative">
@@ -98,7 +98,7 @@ const AboutUs = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              The principles that guide everything we do at Webfluin
+              The principles that guide everything we do at TradeFunder
             </motion.p>
           </div>
 
@@ -113,9 +113,9 @@ const AboutUs = () => {
               <div className="w-16 h-16 bg-[#EB894C] rounded-lg flex items-center justify-center mx-auto mb-4">
                 <Target size={24} className="text-white" />
               </div>
-              <h3 className="text-white text-xl font-bold mb-3">Precision</h3>
+              <h3 className="text-white text-xl font-bold mb-3">Transparency</h3>
               <p className="text-[#717179] text-sm leading-[18px]">
-                We believe in accurate, actionable insights that help you make informed decisions about your AI presence.
+                Complete visibility into trading performance, risk metrics, and fund allocation for all parties involved.
               </p>
             </motion.div>
 
@@ -129,9 +129,9 @@ const AboutUs = () => {
               <div className="w-16 h-16 bg-[#797BEC] rounded-lg flex items-center justify-center mx-auto mb-4">
                 <Users size={24} className="text-white" />
               </div>
-              <h3 className="text-white text-xl font-bold mb-3">Transparency</h3>
+              <h3 className="text-white text-xl font-bold mb-3">Security</h3>
               <p className="text-[#717179] text-sm leading-[18px]">
-                Clear, honest communication about how AI systems work and what our analytics really mean for your business.
+                Advanced security measures and escrow systems to protect both traders and funders throughout the process.
               </p>
             </motion.div>
 
@@ -145,9 +145,9 @@ const AboutUs = () => {
               <div className="w-16 h-16 bg-[#4a9489] rounded-lg flex items-center justify-center mx-auto mb-4">
                 <Heart size={24} className="text-white" />
               </div>
-              <h3 className="text-white text-xl font-bold mb-3">Innovation</h3>
+              <h3 className="text-white text-xl font-bold mb-3">Performance</h3>
               <p className="text-[#717179] text-sm leading-[18px]">
-                Constantly pushing boundaries to stay ahead of the rapidly evolving AI landscape.
+                Data-driven approach to match the best traders with the right funding opportunities for optimal returns.
               </p>
             </motion.div>
 
@@ -161,9 +161,9 @@ const AboutUs = () => {
               <div className="w-16 h-16 bg-[#EB894C] rounded-lg flex items-center justify-center mx-auto mb-4">
                 <Award size={24} className="text-white" />
               </div>
-              <h3 className="text-white text-xl font-bold mb-3">Excellence</h3>
+              <h3 className="text-white text-xl font-bold mb-3">Community</h3>
               <p className="text-[#717179] text-sm leading-[18px]">
-                Delivering the highest quality tools and support to help your brand succeed in the AI era.
+                Building a collaborative ecosystem where traders and funders can learn, grow, and succeed together.
               </p>
             </motion.div>
           </div>
@@ -190,7 +190,7 @@ const AboutUs = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              The passionate experts behind Webfluin's innovative AI analytics platform
+              The passionate experts behind TradeFunder's innovative trading platform
             </motion.p>
           </div>
 
@@ -210,7 +210,7 @@ const AboutUs = () => {
               <h3 className="text-white text-xl font-bold mb-2">Alex Chen</h3>
               <p className="text-[#EB894C] text-sm font-medium mb-3">CEO & Co-Founder</p>
               <p className="text-[#717179] text-sm leading-[18px]">
-                Former AI researcher at Google with 10+ years of experience in machine learning and natural language processing.
+                Former quantitative trader with 10+ years of experience in algorithmic trading and risk management.
               </p>
             </motion.div>
 
@@ -229,7 +229,7 @@ const AboutUs = () => {
               <h3 className="text-white text-xl font-bold mb-2">Sarah Rodriguez</h3>
               <p className="text-[#797BEC] text-sm font-medium mb-3">CTO & Co-Founder</p>
               <p className="text-[#717179] text-sm leading-[18px]">
-                Engineering leader with expertise in scalable data systems and real-time analytics platforms.
+                Engineering leader with expertise in fintech platforms, payment systems, and real-time trading infrastructure.
               </p>
             </motion.div>
 
@@ -248,7 +248,7 @@ const AboutUs = () => {
               <h3 className="text-white text-xl font-bold mb-2">Marcus Johnson</h3>
               <p className="text-[#4a9489] text-sm font-medium mb-3">Head of Product</p>
               <p className="text-[#717179] text-sm leading-[18px]">
-                Product strategist focused on creating intuitive tools that solve complex AI analytics challenges.
+                Product strategist focused on creating intuitive trading tools and building strong user communities.
               </p>
             </motion.div>
           </div>
@@ -274,7 +274,7 @@ const AboutUs = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            Join the brands already using Webfluin to understand their AI presence and optimize for the future.
+            Join thousands of traders and funders already using TradeFunder to connect, collaborate, and succeed together.
           </motion.p>
           <div className="flex gap-4 justify-center">
             <Button variant="default" className="bg-white text-[#0D0D0D] hover:bg-gray-100 px-6 py-2 rounded-lg">

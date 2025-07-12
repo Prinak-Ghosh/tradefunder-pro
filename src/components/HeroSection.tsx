@@ -1,7 +1,7 @@
-
 import { Button } from "@/components/ui/button";
 import { ArrowRight, TrendingUp } from "lucide-react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const HeroSection = () => {
   const containerVariants = {
@@ -41,36 +41,41 @@ const HeroSection = () => {
             variants={itemVariants}
           >
             <TrendingUp className="mr-2 h-4 w-4" />
-            OnlyFans for Traders
+            The Future of Social Trading
           </motion.div>
           
           <motion.h1 
             className="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight"
             variants={itemVariants}
           >
-            Monetize Your Trading{" "}
-            <span className="block text-[#4a9489]">Expertise</span>
+            For the rich and the{" "}
+            <span className="block text-[#4a9489]">Richer</span>
           </motion.h1>
           
           <motion.p 
             className="text-xl text-[#a1a1aa] mb-8 max-w-2xl mx-auto leading-relaxed"
             variants={itemVariants}
           >
-            Join the gamified social finance platform where top traders share exclusive insights, followers discover profitable strategies, and everyone wins together.
+            Monetize your trading expertise by sharing exclusive strategies with followers. 
+            Build your audience, earn revenue, and help others succeed in the markets.
           </motion.p>
           
           <motion.div 
             className="flex flex-col sm:flex-row items-center justify-center gap-4"
             variants={itemVariants}
           >
-            <Button size="lg" className="bg-[#4a9489] text-white hover:bg-[#3d7a6f] rounded-lg shadow-sm px-6 py-3">
-              Start Creating
-              <ArrowRight className="ml-2 h-4 w-4" />
-            </Button>
+            <Link to="/register">
+              <Button size="lg" className="bg-[#4a9489] text-white hover:bg-[#3d7a6f] rounded-lg shadow-sm px-6 py-3">
+                Start Creating
+                <ArrowRight className="ml-2 h-4 w-4" />
+              </Button>
+            </Link>
             
-            <Button size="lg" variant="secondary" className="text-white px-6 py-3 rounded-lg shadow-sm bg-neutral-900 hover:bg-neutral-800 border border-[#262626]">
-              Discover Strategies
-            </Button>
+            <Link to="/ideas">
+              <Button size="lg" variant="secondary" className="text-white px-6 py-3 rounded-lg shadow-sm bg-neutral-900 hover:bg-neutral-800 border border-[#262626]">
+                Discover Strategies
+              </Button>
+            </Link>
           </motion.div>
           
           <motion.div 
