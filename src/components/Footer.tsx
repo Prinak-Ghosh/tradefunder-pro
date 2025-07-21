@@ -1,6 +1,8 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const Footer = () => {
+  const location = useLocation();
+  const isHome = location.pathname === "/";
   return (
     <footer className="w-full bg-[#0a0a0a] border-t border-[#262626] py-12 px-6">
       <div className="max-w-screen-xl mx-auto">
@@ -19,10 +21,10 @@ const Footer = () => {
           <div>
             <h3 className="text-white font-semibold mb-4">Platform</h3>
             <ul className="space-y-2 text-sm text-[#a1a1aa]">
-              <li><Link to="/ideas" className="hover:text-white transition-colors">For Creators</Link></li>
-              <li><Link to="/funding" className="hover:text-white transition-colors">For Traders</Link></li>
+              <li><Link to="/register" className="hover:text-white transition-colors">For Creators</Link></li>
+              <li><Link to="/ideas" className="hover:text-white transition-colors">For Traders</Link></li>
               <li><Link to="/ideas" className="hover:text-white transition-colors">Top Performers</Link></li>
-              <li><Link to="/register" className="hover:text-white transition-colors">Pricing</Link></li>
+              {isHome && <li><a href="#pricing" className="hover:text-white transition-colors">Pricing</a></li>}
             </ul>
           </div>
           
@@ -30,9 +32,9 @@ const Footer = () => {
             <h3 className="text-white font-semibold mb-4">Company</h3>
             <ul className="space-y-2 text-sm text-[#a1a1aa]">
               <li><Link to="/about" className="hover:text-white transition-colors">About</Link></li>
-              <li><a href="#" className="hover:text-white transition-colors">Careers</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Legal</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Support</a></li>
+              <li><a href="mailto:careers@tradefunder.com" className="hover:text-white transition-colors">Careers</a></li>
+              <li><a href="mailto:legal@tradefunder.com" className="hover:text-white transition-colors">Legal</a></li>
+              <li><a href="mailto:support@tradefunder.com" className="hover:text-white transition-colors">Support</a></li>
             </ul>
           </div>
         </div>

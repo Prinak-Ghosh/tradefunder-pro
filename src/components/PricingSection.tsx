@@ -53,7 +53,7 @@ const PricingSection = () => {
   ];
 
   return (
-    <section className="w-full py-20 px-6 bg-[#0a0a0a]">
+    <section id="pricing" className="w-full py-20 px-6 bg-[#0a0a0a]">
       <div className="max-w-screen-xl mx-auto">
         <div className="text-center mb-16">
           <motion.h2 
