@@ -29,6 +29,10 @@ import FundingDetail from "./pages/FundingDetail";
 // Admin pages
 import AdminDashboard from "./pages/admin/Dashboard";
 
+// Product pages
+import Products from "./pages/Products";
+import Success from "./pages/Success";
+
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -63,6 +67,10 @@ const App = () => (
           
           {/* Admin Routes */}
           <Route path="/admin" element={<AdminDashboard />} />
+          
+          {/* Product Routes */}
+          <Route path="/products" element={<Products />} />
+          <Route path="/success" element={<Success />} />
           
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />

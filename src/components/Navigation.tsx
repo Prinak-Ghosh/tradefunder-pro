@@ -22,6 +22,9 @@ const Navigation = () => {
             <Link to="/funding" className="text-white hover:text-[#4a9489] transition-colors text-sm font-medium">
               Funding
             </Link>
+            <Link to="/products" className="text-white hover:text-[#4a9489] transition-colors text-sm font-medium">
+              Products
+            </Link>
             <Link to="/dashboard" className="text-white hover:text-[#4a9489] transition-colors text-sm font-medium">
               Dashboard
             </Link>

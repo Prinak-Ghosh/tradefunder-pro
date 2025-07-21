@@ -5,6 +5,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { motion } from "framer-motion";
+import { SubscriptionStatus } from "@/components/SubscriptionStatus";
 import { 
   TrendingUp, 
   TrendingDown, 
@@ -357,6 +358,11 @@ const Dashboard = () => {
               </CardContent>
             </Card>
           </TabsContent>
+
+          {/* Subscription Status */}
+          <div className="lg:col-span-2">
+            <SubscriptionStatus />
+          </div>
         </Tabs>
       </div>
 
